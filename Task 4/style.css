@@ -1,0 +1,98 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+    --blue: #5f8fc3;
+	--purple: #8B5CF6;
+	--light: #EEE;
+    --background: #ee96f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    color: var(--darkest);
+    font-size: xxx-large;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 370px;
+    margin: 45px auto;
+    background-color: var(--light);
+    border: 3px solid;
+    border-radius: 12px;
+    border-color: var(--darkest);
+    box-shadow: 8px 8px 10px var(--dark);
+}
+
+#screen {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 80px;
+    line-height: 50px;
+    padding: 15px 8px;
+    font-size: 40px;
+}
+
+.buttons {
+    display: grid;
+    color: rgb(0, 0, 0);
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border: 2.5px solid var(--darker);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button {
+    line-height: 80px;
+    background-color: var(--blue);
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: var(--grey);
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+
+#AC {
+    background-color: var(--pink);
+}
+
+#DEL {
+    background-color: var(--pink);
+}
+
+#equal_to {
+    background-color: var(--grey);
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+#equal_to:hover {
+    background-color: var(--purple);
+    transition: 0.3s ease-in-out;
+}
