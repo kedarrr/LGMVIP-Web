@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column1 col">
+            <h1>Student Registration Form</h1>
+            <form id="form">
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td class="a c">
+                            <input class="d" type="text" name="name" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td class="a c">
+                            <input class="d" type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td class="a c">
+                            <input class="d" type="tel" name="phone" id="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td>
+                            <input type="file" name="image" class="in" id="img" alt="student image" 
+                                accept="image/*"
+                                onchange="loadFile(event)">
+                        </td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>Gender</td>
+                        <td class="a c h">
+                            <span>
+                                <input type="radio" class="f" name="gender" id="Male" value="Male">Male
+                            </span>
+                            <span>
+                                <input class="f" type="radio" name="gender" id="Female" value="Female">Female
+                            </span>
+                        </td>
+                    </tr>
+                    <tr rowspan="3">
+                        <td>Skills</td>
+                        <td class="a c h">
+                            <span>
+                                <input type="checkbox" name="skill" class="g" id="HTML" value="HTML">Java 
+                            </span>
+                            <span>
+                                <input class="g" type="checkbox" name="skill" id="CSS" value="CSS">C 
+                            </span>
+                            <span>
+                                <input class="g" type="checkbox" name="skill" value="JavaScript" id="JavaScript">Python 
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" class="a">
+                            <input class="e b" type="button" onclick="fun()" value="Submit">
+                            <input class="e r" type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="column2 col" id="c">
+            <h1>Enrolled Students</h1>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
